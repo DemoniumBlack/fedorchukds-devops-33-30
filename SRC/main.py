@@ -10,3 +10,11 @@ sentry_sdk.init(
     # We recommend adjusting this value in production.
     profiles_sample_rate=1.0,
 )
+
+if __name__ == "__main__":
+    for i in range(1, 99):
+        if i == 30:
+            division_by_zero = 1 / 0
+            print(division_by_zero)
+        else:
+            print("ok")
